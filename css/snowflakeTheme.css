@@ -1,0 +1,15 @@
+body {
+    background-color: #2A3247;
+}
+
+.create-task, .add-task {
+    background-color: rgba(30,188,209,.15);
+    color: rgba(30,188,209);
+    transition: all .2s ease;
+}
+
+.create-task:hover, .add-task:hover  {
+    background-color: rgba(30,188,209,.2);
+}
+
+.styles h2 {color: snow;}

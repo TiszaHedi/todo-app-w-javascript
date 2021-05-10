@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" id="pageStyle" href="css/springTheme.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="note">
+          <h3>My tasks</h3>
+          <ul class="todo-list">
+            <div class="todo-item__container draggable" draggable="true">
+                <li class="todo-item">
+                    Olvasás
+                </li>
+                <button class="complete-button"><img src="assets/square.png" alt="sd"></button>
+                <button class="delete-button" data-taskid="${task.id}"><img src="assets/X.png" alt="x"></button>
+            </div>
+          </ul>
+          <div class="create">
+            <button class="create-task">New task</button>
+            <div class="create-form__container"></div>
+          </div>
+        </div>
+        <div class="styles">
+          <h2>Styles</h2>
+          <button class="style-button" onclick="selectStyle('css/springTheme.css')"> <span class="style-button-inner style-button-inner--spring"></span> </button>
+          <button class="style-button" onclick="selectStyle('css/snowflakeTheme.css')"> <span class="style-button-inner style-button-inner--snowfall"></span> </button>
+          <button class="style-button" onclick="selectStyle('css/pinkTheme.css')"> <span class="style-button-inner style-button-inner--pink"></span> </button>
+        </div>
+      </div>
+      <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    background-color: #FCE5D0;
+}
+
+.create-task, .add-task {
+    background-color: rgba(238,124,19,.15);
+    color: rgba(238,124,19,1);
+    transition: all .2s ease;
+}
+
+.create-task:hover, .add-task:hover  {
+    background-color: rgba(238,124,19,.2);
+}
